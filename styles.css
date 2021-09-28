@@ -31,7 +31,7 @@ ul {
     list-style: none;
 }
 
-.web-link{
+.web-link:link{
     color: crimson;
 }
 
@@ -247,6 +247,8 @@ li > a {
     }
 
     .projects-section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         height: fit-content;
     }
 }
