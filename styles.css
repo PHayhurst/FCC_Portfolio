@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    color:beige;
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: #3E3D53
+}
+
+ul {
+    list-style: none;
+}
+
+.web-link:visited {
+    color: crimson;
+}
+
+.web-link:hover {
+    color: rgb(255, 20, 67);
+}
+
+.accent {
+    color:crimson;
+}
+
+.accent-grey {
+    color: #C5C6D0;
+}
+
+.small-heading {
+    font-size: 1.65rem;
+    margin: 1.6rem 0;
+}
+
+.big-heading {
+    font-size: 2.4em;
+    font-weight: 600;
+}
+
+.lighter-heading {
+    opacity: 50%;
+}
+
+.light-heading {
+    opacity: 70%;
+}
+
+.description {
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+    color: #ddd;
+    max-width: 500px;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    padding: 0 5%;
+    background-color: #9897A9;   
+    z-index: 4;
+    
+}
+
+li > a {
+    text-decoration: none;
+    color: #232023;
+    transition: color 300ms;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nav-list a:hover {
+    color: #C5C6D0;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    padding: 0 10%;
+}
+
+.header {
+    padding: 0 5%;
+}
+
+.projects-section {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #333333;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 320px));
+    justify-content: center;
+    grid-gap: 4rem;
+    margin: 4rem auto;
+    max-width: 1280px;
+    padding-bottom: 2rem;
+}
+
+.projects-grid-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.project-image {
+    max-height: 80%;
+    max-width: 80%; 
+    display: flex;
+    margin: auto;
+    border: 5px #C5C6D0 solid;
+    border-radius: 1.3rem;
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    
+}
+
+.project-image:hover {
+    box-shadow: 0 0 20px black;
+    transform: translateY(-10px);
+}
+
+.projects-grid-item {
+    display: flex;
+    justify-content: center;
+}
+
+.project-title {
+    color:beige;
+    font-weight: bold;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1.6rem 0;
+    margin: 0;
+}
+
+.contact-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #3E3D53;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact-links > a {
+    text-decoration: none;
+    color:beige;
+    font-weight: bold;
+}
+
+.contact-details {
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: scale(125%);
+}
+
+.btn {
+    margin: 2rem 4rem;
+}
+
+
+@media (max-width: 700px) {
+
+
+    a, h1, h2, body, p {
+        font-size: 80%;
+    }
+
+    .projects-grid {
+        grid-template-columns: minmax(auto, 450px);
+        flex-wrap: wrap;
+        row-gap: 30px;
+        padding-bottom: 2rem;
+    }
+
+    .projects-grid-item {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .projects-section {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .nav {
+        padding: 0 40%;
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+    }
+    .nav-list a {
+        font-size: 1.5rem;
+        padding: .75rem 1.5rem;
+    }
+  }
+
+
+
+
+
+
+
+
