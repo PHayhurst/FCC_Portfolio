@@ -31,6 +31,11 @@ ul {
     list-style: none;
 }
 
+.bolder-link {
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+}
+
 .web-link:link{
     color: crimson;
 }
@@ -63,7 +68,7 @@ ul {
 }
 
 .lighter-heading {
-    opacity: 75%;
+    opacity: 58%;
 }
 
 .light-heading {
@@ -73,8 +78,12 @@ ul {
 .description {
     margin-top: 1.6rem;
     font-size: 1.9rem;
-    color: #ddd;
-    max-width: 500px;
+    color: #eee;
+    max-width: 600px;
+    font-weight: 400;
+    font-family: Raleway, sans-serif;
+    line-height: 2.2rem;
+    opacity: 75%;
 }
 
 .nav {
@@ -117,7 +126,8 @@ li > a {
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-image: linear-gradient(62deg, #3a3d40 0%, #0d0c0e 100%);
+    /*background-image: linear-gradient(62deg, #3f3f3f 0%, #0f0e0f 100%);*/
     padding: 2rem 10%;
 }
 
@@ -175,13 +185,14 @@ li > a {
 
 .project-title {
     color:beige;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.6rem;
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 1.6rem 0;
     margin: 0;
+    letter-spacing: .05em;
 }
 
 .contact-section {
